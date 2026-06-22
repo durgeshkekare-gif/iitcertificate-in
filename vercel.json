@@ -1,0 +1,15 @@
+{
+  "trailingSlash": true,
+  "headers": [
+    { "source": "/(.*)", "headers": [
+      { "key": "X-Content-Type-Options", "value": "nosniff" },
+      { "key": "Cache-Control", "value": "public, max-age=3600" }
+    ]}
+  ],
+  "rewrites": [
+    { "source": "/programs", "destination": "/programs/index.html" },
+    { "source": "/institutions", "destination": "/institutions/index.html" },
+    { "source": "/blog", "destination": "/blog/index.html" },
+    { "source": "/institutions/:slug", "destination": "/institutions/:slug/index.html" }
+  ]
+}
