@@ -60,5 +60,12 @@
       "maxDuration": 10
     }
   },
-  "trailingSlash": true
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "https://www.iitcertificate.in/:path*",
+      "destination": "https://iitcertificate.in/:path*",
+      "permanent": true
+    }
+  ]
 }
