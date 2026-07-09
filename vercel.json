@@ -60,18 +60,5 @@
       "maxDuration": 10
     }
   },
-  "trailingSlash": false,
-  "redirects": [
-    {
-      "source": "/:path*",
-      "has": [
-        {
-          "type": "host",
-          "value": "www.iitcertificate.in"
-        }
-      ],
-      "destination": "https://iitcertificate.in/:path*",
-      "permanent": true
-    }
-  ]
+  "trailingSlash": false
 }
