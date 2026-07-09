@@ -63,7 +63,13 @@
   "trailingSlash": false,
   "redirects": [
     {
-      "source": "https://www.iitcertificate.in/:path*",
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.iitcertificate.in"
+        }
+      ],
       "destination": "https://iitcertificate.in/:path*",
       "permanent": true
     }
