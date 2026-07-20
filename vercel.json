@@ -65,5 +65,18 @@
     }
   },
   "trailingSlash": false,
-  "cleanUrls": true
+  "cleanUrls": true,
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.iitcertificate.in"
+        }
+      ],
+      "destination": "https://iitcertificate.in/:path*",
+      "permanent": true
+    }
+  ]
 }
